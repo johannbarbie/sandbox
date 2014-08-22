@@ -4,3 +4,13 @@ Notes
 http://learn.jquery.com/javascript-101/
 http://stackoverflow.com/questions/7966731/what-technologies-to-use-for-terminal-ish-text-based-rpg
 
+
+app/scripts/init.js (contains more imports)
+iatn
+socket.io
+
+underscore (managed datastructures)
+
+
+<Questions>
+How come the h1 doesn't change size when I change it in the stylesheet?

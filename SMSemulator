@@ -1,0 +1,35 @@
+<!-- 
+20140822
+
+ -->
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Demo</title>
+    <script src="jquery-2.1.1.js"></script> 
+    <script>
+
+    $( document ).ready(function() {
+        $( "a" ).click(function( event ) {
+            //alert( "The link will no longer take you to jquery.com" );
+            $( this ).hide( "slow" );
+            event.preventDefault();
+            
+        });
+    });
+     
+    //$( "a" ).addClass( "test" ); //make bold
+    // $( "a" ).removeClass( "test" ); //remove bold
+    </script>
+</head>
+<body>
+    <h1>SMS Emulator</h1>
+    <div id="responseField">
+    </div>
+    <div id="dataEntry">
+        <div id="messageField"></div>
+        <button>Send</button>
+    </div>
+</body>
+</html>
