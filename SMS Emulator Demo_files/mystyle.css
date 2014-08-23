@@ -10,80 +10,53 @@ body {
 
 
 h1 {
-	font-size: 20px;
+	font-size: 40px;
 }
 
-/************************
-		TOP
-*************************/
-
 .SMSmessenger {
+	outline:1px solid black;
 	width:300px;
 	height:400px;
 	margin: 0;
+
 	background-color:blue;
 }    
 
 .receiver {
+	outline:1px solid black;
 	height:60px;
-    background-color: navy;
+    background-color:red;
     margin:0;
     padding: 0;
 }
 
 .receiver .gatewayNumber {
 	padding: 10px;
-	text-align: center;
-	color:white;
+	text-align:center;
 }
     
-/************************
-		MIDDLE
-*************************/
 .middle {
-	position: absolute; 
-	bottom: 0;
-}
-
-.container {
+	outline:1px solid black;
 	height: 270px;
 	padding: 0;
 	position: relative;
  }
 
-
-.recordSent {
-	text-align:right;
-	background-color:lightblue;
-	float: right;
-	width: 270px;
+.middle .responseSystem {
 	color: white;
-	padding: 5px;
-	margin: 10px;
-}
-
-.recordReceived {
-	outline:1px solid white;
-	float: left;
-	width: 270px;
-	color: white;
-	padding: 5px;
-	margin: 10px;
+	position: absolute; 
+	bottom: 0;
+	padding: 10px;
 }
     
-
-/************************
-		BOTTOM
-*************************/
-.inputField{
+.input{
 	position: relative;
 	padding: 10px;
-	background-color: navy;
-	height:70px;
 }
 
 .message{
 	position: absolute;
+	outline:1px solid black;
 	width:210px;
 	height:50px;
 	background-color:white;
@@ -91,7 +64,7 @@ h1 {
 	
 }
 
-.inputField button{
+.input button{
 	position: static;
 	width: 70px;
 	height: 32px;
