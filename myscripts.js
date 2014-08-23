@@ -1,7 +1,26 @@
 $( document ).ready(function() {
 
+// Initial test
+window.onload = function() {
+    alert( 'Welcome to the 37coins SMS emulator' );
+}; // ( Initial test )
+
+
 // Click the 'Send' button
 $( 'button' ).click(function() {
+    alert( 'Handler for .click() called' );
+});// ( Send button )
+
+// Hit 'enter' on form
+$( '#textBox' ).keydown(function(){
+    if( event.which == 13 ){
+      alert( 'Handler for .keydown() called' ); 
+      registerDisplay; 
+    };
+});// ( Enter button )
+
+// Register and display messages
+(function registerDisplay() {
 
     // Get the value from the input box
     var value = $( 'input' ).val();
@@ -10,28 +29,24 @@ $( 'button' ).click(function() {
     //whatResponse();
     $( '.recordReceived' ).text( 'testing 2 and all that' );
 
-    });
-
-});
+});// ( Register and display messages )
 
 
+});// ( document )
 
 
-// Reference or Old stuff
-/*
-    $( "a" ).click(function( event ) {
-        //alert( "The link will no longer take you to jquery.com" );
-        $( this ).hide( "slow" );
-        event.preventDefault();
-        
-    });
 
-function(data) {
-// redirect after 'Enter' is pressed in input fields
-$( 'input' ).keydown(function(event){
-    if(event.keyCode==13){
-        $( 'button' ).trigger( 'click' );
-    }
-});
+
+
+
+
+/* EXAMPLE: Define element first
+    // Get a handle on the first button element in the document.
+    var button = document.querySelector( "button" );
+ 
+    // If a user clicks on it, say hello!
+    button.addEventListener( "click", function( ev ) {
+        alert( "Hello" );
+    }, false);
 
 */
