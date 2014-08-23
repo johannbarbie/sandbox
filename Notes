@@ -1,9 +1,25 @@
 
+#Goal
 #Questions
 #Todo
 #Reference
 
+#Goal:
+1. To create a simple javascript emulator to quickly test new SMS communication patterns
+2. To create a framework to display command examples on the website via javascript animations
 
+
+#Questions
+
+#Todo
+-. basic positioning
+-. store and display the sent text
+1. variables for bal, time, date, caller
+0. automatic welcome message (only shows up once)
+2. persistant bubbles (that move up)
+2. animation of bubbles
+3. integration with existing txt cmds
+3. line breaks (from existing txt cmds)
 
 #Reference
 http://learn.jquery.com/javascript-101/
@@ -13,18 +29,4 @@ http://stackoverflow.com/questions/7966731/what-technologies-to-use-for-terminal
 app/scripts/init.js (contains more imports)
 iatn
 socket.io
-
 underscore (managed datastructures)
-
-
-#Questions
-How come the h1 doesn't change size when I change it in the stylesheet?
-
-
-#Todo
--. basic positioning
-0. automatic welcome message
-1. variables for bal, time, date, caller
-1. store and display the sent text
-2. persistant bubbles (that move up)
-3. integration with existing text commands
