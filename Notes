@@ -16,7 +16,7 @@ What is the best way to parse the value? Is there a way to make a table (array?)
 # Logic Todo
 -. basic positioning
 -. store and display the sent text
-0. track if first message or not
+-. track if first message or not
 1. variables for bal, time, date, caller
 3. integration with existing txt cmds
 3. line breaks (from existing txt cmds)

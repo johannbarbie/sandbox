@@ -9,16 +9,16 @@ var bitBalance = 0; //in BITs, one-millionth of a 'bitcoin'
     SMS responses
 ********************/
 var welcomeMSG = 'Welcome to 37coins. SMS bitcoin wallet. Send commands to this gateway number. Reply HELP for more info or www.37coins.com';
-var unknownMSG = 'Unknown command, please try again';
 var sendMSG = 'How much do you want to send?';
 var helpMSG = 'Help instructions here. send = this. bal = this. pin = this.';
 var koreanMSG = '안녕하십니까!';
+var unknownMSG = 'Unknown command, please try again';
+var balanceMSG = 'balance is displayed here';
 // ( SMS responses )
 
 /**************************
     HTML and CSS Stuff
 ***************************/
-
 $( document ).ready(function() {
 // Initial test, set user to 'new'
 window.onload = function() { 
@@ -52,14 +52,15 @@ var inputValue = $( 'input' ).val();
 if ( commandCount == 0 ){
     var feedbackValue = welcomeMSG;
     displayFeedback(inputValue, feedbackValue);
-} 
 // stupid simple parsing...
-else if ( inputValue == 'send' ){
+} else if ( inputValue == 'send' ){
     var feedbackValue = sendMSG;
 } else if ( inputValue == 'help' ){
     var feedbackValue = helpMSG;
-} else if ( inputValue == '안녕' ) {
+} else if ( inputValue == '안녕' ){
     var feedbackValue = koreanMSG;
+} else if ( inputValue == 'bal' ){
+    var feedbackValue = balanceMSG;
 } else {
     var feedbackValue = unknownMSG;
 }; // ( simple parsing )
