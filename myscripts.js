@@ -1,13 +1,29 @@
 /************************
     variables (global?)
 *************************/
-var userNew;
+var commandCount = 0;
+var bitBalance = 0; //in BITs, one-millionth of a 'bitcoin'
+
+
+/******************
+    SMS responses
+********************/
+var welcomeMSG = 'Welcome to 37coins. SMS bitcoin wallet. Send commands to this gateway number. Reply HELP for more info or www.37coins.com';
+var unknownMSG = 'Unknown command, please try again';
+var sendMSG = 'How much do you want to send?';
+var helpMSG = 'Help instructions here. send = this. bal = this. pin = this.';
+var koreanMSG = '안녕하십니까!';
+// ( SMS responses )
+
+/**************************
+    HTML and CSS Stuff
+***************************/
 
 $( document ).ready(function() {
 // Initial test, set user to 'new'
 window.onload = function() { 
     alert( 'Welcome to the 37coins SMS emulator' );
-    //userNew = true;
+    $( '#commandCountFeed span' ).html( commandCount );
 }; // ( Initial test )
 
 // Click the 'Send' button
@@ -33,35 +49,29 @@ function parseCommand(){
 var inputValue = $( 'input' ).val();
 
 // if user is new
-if ( userNew == true ){
-    userNew = false;
-    inputValue == 'welcomeMSG';
+if ( commandCount == 0 ){
+    var feedbackValue = welcomeMSG;
+    displayFeedback(inputValue, feedbackValue);
 } 
 // stupid simple parsing...
-    else if ( inputValue == 'send' ){
-        var feedbackValue = sendMSG;
-    } else if ( inputValue == 'help' ){
-        var feedbackValue = helpMSG;
-    } else if ( inputValue == '안녕' ) {
-        var feedbackValue = koreanMSG;
-    } else {
-        var feedbackValue = unknownMSG;
-    };
+else if ( inputValue == 'send' ){
+    var feedbackValue = sendMSG;
+} else if ( inputValue == 'help' ){
+    var feedbackValue = helpMSG;
+} else if ( inputValue == '안녕' ) {
+    var feedbackValue = koreanMSG;
+} else {
+    var feedbackValue = unknownMSG;
+}; // ( simple parsing )
+
+    commandCount++;
+    
+    // Feedback on Variables
+    $( '#commandCountFeed span' ).html( commandCount );
 
     displayFeedback(inputValue, feedbackValue);
+
 }// ( parseCommand )
-
-
-/******************
-    SMS responses
-********************/
-var welcomeMSG = 'Welcome';
-var unknownMSG = 'Unknown command, please try again';
-var sendMSG = 'How much do you want to send?';
-var helpMSG = 'Help instructions here';
-var koreanMSG = '안녕하십니까!';
-// ( SMS responses )
-
 
 /**********************
     Display Commands

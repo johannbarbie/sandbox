@@ -12,6 +12,7 @@
 # Questions
 What is the best way to parse the value? Is there a way to make a table (array?) that will compare what is entered to a series of information?
 
+
 # Logic Todo
 -. basic positioning
 -. store and display the sent text
@@ -19,6 +20,7 @@ What is the best way to parse the value? Is there a way to make a table (array?)
 1. variables for bal, time, date, caller
 3. integration with existing txt cmds
 3. line breaks (from existing txt cmds)
+4. Add a timebreak to responses (simulate a slow SMS system)
 
 # Interaction Todo
 * 1. clear the field (sending the text & #textBox onClick)
@@ -26,10 +28,15 @@ What is the best way to parse the value? Is there a way to make a table (array?)
 * 2. animation of bubbles
 * Look for existing javascript messenger...
 
+# Maybe Todo
+1. Suggestions of command: a box that has a list of commands to drag and drop into place "SEND 12USD 626727272" or "Help", etc.
+2. auto-complete texts... users can only send a few different texts that the system predicts and fills in for them
+3. transaction builder... fill in a form to create transactions (we were going to do this anyways)
+
+
 #Reference
 http://learn.jquery.com/javascript-101/
 http://stackoverflow.com/questions/7966731/what-technologies-to-use-for-terminal-ish-text-based-rpg
-
 
 app/scripts/init.js (contains more imports)
 iatn
