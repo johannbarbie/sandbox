@@ -1,25 +1,30 @@
 
-#Goal
-#Questions
-#Todo
-#Reference
+# Goal
+# Questions
+# Todo (logic and interaction)
+# Reference
 
-#Goal:
+# Goal:
 1. To create a simple javascript emulator to quickly test new SMS communication patterns
 2. To create a framework to display command examples on the website via javascript animations
 
 
-#Questions
+# Questions
+What is the best way to parse the value? Is there a way to make a table (array?) that will compare what is entered to a series of information?
 
-#Todo
+# Logic Todo
 -. basic positioning
 -. store and display the sent text
+0. track if first message or not
 1. variables for bal, time, date, caller
-0. automatic welcome message (only shows up once)
-2. persistant bubbles (that move up)
-2. animation of bubbles
 3. integration with existing txt cmds
 3. line breaks (from existing txt cmds)
+
+# Interaction Todo
+* 1. clear the field (sending the text & #textBox onClick)
+* 2. persistant bubbles (that move up)
+* 2. animation of bubbles
+* Look for existing javascript messenger...
 
 #Reference
 http://learn.jquery.com/javascript-101/
@@ -30,3 +35,12 @@ app/scripts/init.js (contains more imports)
 iatn
 socket.io
 underscore (managed datastructures)
+
+
+variables?
+user
+account = true/false
+balance = 1234BITS, 1234USD
+accountLabel = true/fase
+accountLabel = Fel12Bel12
+

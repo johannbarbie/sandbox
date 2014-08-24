@@ -1,6 +1,14 @@
+/************************
+    variables (global?)
+*************************/
+var userNew;
+
 $( document ).ready(function() {
-// Initial test
-window.onload = function() { alert( 'Welcome to the 37coins SMS emulator' ); }; // ( Initial test )
+// Initial test, set user to 'new'
+window.onload = function() { 
+    alert( 'Welcome to the 37coins SMS emulator' );
+    //userNew = true;
+}; // ( Initial test )
 
 // Click the 'Send' button
 $( 'button' ).click(function() {
@@ -21,17 +29,39 @@ $( '#textBox' ).keydown(function(){
  ************************/
 // return different command depending on input
 function parseCommand(){
-    var inputValue = $( 'input' ).val();
 
-    // hello generates welcome message
-    if ( inputValue == 'hello' ){
-        var feedbackValue = welcomeMSG;
+var inputValue = $( 'input' ).val();
+
+// if user is new
+if ( userNew == true ){
+    userNew = false;
+    inputValue == 'welcomeMSG';
+} 
+// stupid simple parsing...
+    else if ( inputValue == 'send' ){
+        var feedbackValue = sendMSG;
+    } else if ( inputValue == 'help' ){
+        var feedbackValue = helpMSG;
+    } else if ( inputValue == '안녕' ) {
+        var feedbackValue = koreanMSG;
     } else {
         var feedbackValue = unknownMSG;
     };
 
     displayFeedback(inputValue, feedbackValue);
 }// ( parseCommand )
+
+
+/******************
+    SMS responses
+********************/
+var welcomeMSG = 'Welcome';
+var unknownMSG = 'Unknown command, please try again';
+var sendMSG = 'How much do you want to send?';
+var helpMSG = 'Help instructions here';
+var koreanMSG = '안녕하십니까!';
+// ( SMS responses )
+
 
 /**********************
     Display Commands
@@ -47,12 +77,6 @@ function displayFeedback(inputValue, feedbackValue) {
 
 }// ( Register and display messages )
 
-/******************
-    SMS responses
-********************/
-var welcomeMSG = 'welcome';
-var unknownMSG = 'unknown command, please try again';
-// ( SMS responses )
 
 
 
