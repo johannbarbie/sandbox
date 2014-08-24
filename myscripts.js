@@ -8,8 +8,8 @@ var bitBalance = 0; //in BITs, one-millionth of a 'bitcoin'
     SMS responses
 ********************/
 // ENGLISH Responses
-var balanceMSG = 'balance is displayed here';
-var helpMSG = 'Help instructions here. send = this. bal = this. pin = this.';
+var balanceMSG = 'Available balance: ';
+var helpMSG = 'Help instructions here<br/>send = this<br/>bal = this<br/>pin = this';
 var sendMSG = 'How much do you want to send?';
 var transMSG = 'Here are the transactions that you have done';
 var unknownMSG = 'Unknown command, please try again';
@@ -88,7 +88,7 @@ function parseCMD() {
 // ENGRISH
 // Balance
 function balCMD( inputValue ) {
-    var feedbackValue = balanceMSG;
+    var feedbackValue = balanceMSG + bitBalance;
     displayFeedback(inputValue, feedbackValue);
 };
 
@@ -161,7 +161,6 @@ function displayFeedback(inputValue, feedbackValue) {
 
 var n = $("#example div").length;
 $("body").css("background", (n < 2) ? "green" : "orange");
-
 */
 
 /* Javascipt shorthand 'switch' statement (*A switch statement may be better as its faster than running through a if/else statement.)
@@ -177,6 +176,14 @@ switch (test) {
     default:
         // do something if no match is found...
         break; // always break on default to keep consistency 
+} */
+
+/* Javascipt 'return' example
+function addNumbers(a,b) {
+    var c = a+b;
+    return c;
 }
+
+document.write(addNumbers(3,6));
 
 */
