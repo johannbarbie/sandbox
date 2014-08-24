@@ -7,13 +7,14 @@ var bitBalance = 0; //in BITs, one-millionth of a 'bitcoin'
 /******************
     SMS responses
 ********************/
+// ENGLISH Responses
 var balanceMSG = 'balance is displayed here';
 var helpMSG = 'Help instructions here. send = this. bal = this. pin = this.';
 var sendMSG = 'How much do you want to send?';
 var transMSG = 'Here are the transactions that you have done';
 var unknownMSG = 'Unknown command, please try again';
 var welcomeMSG = 'Welcome to 37coins. SMS bitcoin wallet. Send commands to this gateway number. Reply HELP for more info or www.37coins.com';
-
+//  KOREAN Responses
 var kWelcomeMSG = '안녕하십니까!';
 
 /**************************
@@ -25,17 +26,18 @@ $( document ).ready(function() {
     window.onload = function() { 
         alert( 'Welcome to the 37coins SMS emulator' );
         $( '#commandCountFeed span' ).html( commandCount );
+        $( '#balanceFeed span' ).html( bitBalance );
     }; // ( Initial test )
 
     // Click the 'Send' button
     $( 'button' ).click(function() {
-        parseCommand(); 
+        parseCMD(); 
     });// ( Send button )
 
     // Hit 'enter' on form
     $( '#textBox' ).keydown(function() {
         if( event.which == 13 ){
-          parseCommand();
+          parseCMD();
         };
     });// ( Enter button )
 
@@ -45,13 +47,13 @@ $( document ).ready(function() {
     Parsing of commands
  ************************/
 // return different command depending on input
-function parseCommand() {
+function parseCMD() {
     var inputValue = $( 'input' ).val();
 
     // if user is new
     if ( commandCount == 0 ) {
         welcomeCMD( inputValue );
-    // stupid simple parsing...
+    // ENGLISH
     } else if ( inputValue == 'bal' 
              || inputValue == 'balance' ) {
         balCMD( inputValue );
@@ -65,12 +67,13 @@ function parseCommand() {
              || inputValue == 'tran'
              || inputValue == 'transaction') {
         transCMD( inputValue );
-    // korean
+    // KOREAN
     } else if ( inputValue == '안녕') {
         welcomeK( inputValue );
     } else {
         unknownCMD( inputValue );
     };  // ( stupid simple parsing )
+    // SPANISH?
 
     // Feedback on Variables
     commandCount++;
@@ -82,7 +85,7 @@ function parseCommand() {
     Commands
 *******************/
 
-// ENGLISH
+// ENGRISH
 // Balance
 function balCMD( inputValue ) {
     var feedbackValue = balanceMSG;
@@ -143,6 +146,7 @@ function displayFeedback(inputValue, feedbackValue) {
 
 
 /* EXAMPLE: Define element first
+
     // Get a handle on the first button element in the document.
     var button = document.querySelector( "button" );
  
@@ -150,5 +154,29 @@ function displayFeedback(inputValue, feedbackValue) {
     button.addEventListener( "click", function( ev ) {
         alert( "Hello" );
     }, false);
+
+*/
+
+/* Javascipt shorthand 'if' statement
+
+var n = $("#example div").length;
+$("body").css("background", (n < 2) ? "green" : "orange");
+
+*/
+
+/* Javascipt shorthand 'switch' statement (*A switch statement may be better as its faster than running through a if/else statement.)
+
+var test = "male";
+switch (test) {
+    case "female":
+        // do something...
+        break;
+    case "male":
+        // do something else...
+        break;
+    default:
+        // do something if no match is found...
+        break; // always break on default to keep consistency 
+}
 
 */
