@@ -4,7 +4,6 @@
 var commandCount = 0;
 var bitBalance = 0; //in BITs, one-millionth of a 'bitcoin'
 
-
 /******************
     SMS responses
 ********************/
@@ -21,23 +20,24 @@ var kWelcomeMSG = '안녕하십니까!';
     HTML and CSS Stuff
 ***************************/
 $( document ).ready(function() {
-// Initial test, set user to 'new'
-window.onload = function() { 
-    alert( 'Welcome to the 37coins SMS emulator' );
-    $( '#commandCountFeed span' ).html( commandCount );
-}; // ( Initial test )
 
-// Click the 'Send' button
-$( 'button' ).click(function() {
-    parseCommand(); 
-});// ( Send button )
+    // Initial test, set user to 'new'
+    window.onload = function() { 
+        alert( 'Welcome to the 37coins SMS emulator' );
+        $( '#commandCountFeed span' ).html( commandCount );
+    }; // ( Initial test )
 
-// Hit 'enter' on form
-$( '#textBox' ).keydown(function() {
-    if( event.which == 13 ){
-      parseCommand();
-    };
-});// ( Enter button )
+    // Click the 'Send' button
+    $( 'button' ).click(function() {
+        parseCommand(); 
+    });// ( Send button )
+
+    // Hit 'enter' on form
+    $( '#textBox' ).keydown(function() {
+        if( event.which == 13 ){
+          parseCommand();
+        };
+    });// ( Enter button )
 
 });// ( document )
 
@@ -51,19 +51,21 @@ function parseCommand() {
     // if user is new
     if ( commandCount == 0 ) {
         welcomeCMD( inputValue );
-        // stupid simple parsing...
-    } else if ( inputValue == 'bal' || inputValue == 'balance' ) {
+    // stupid simple parsing...
+    } else if ( inputValue == 'bal' 
+             || inputValue == 'balance' ) {
         balCMD( inputValue );
-    } else if ( inputValue == 'help' || inputValue == 'hlp' ) {
+    } else if ( inputValue == 'help' 
+             || inputValue == 'hlp' ) {
         helpCMD( inputValue );
     } else if ( inputValue == 'send' ) {
         sendCMD( inputValue );
     } else if ( inputValue == 'trans' 
-        || inputValue == 'transactions'
-        || inputValue == 'tran'
-        || inputValue == 'transaction') {
+             || inputValue == 'transactions'
+             || inputValue == 'tran'
+             || inputValue == 'transaction') {
         transCMD( inputValue );
-// korean
+    // korean
     } else if ( inputValue == '안녕') {
         welcomeK( inputValue );
     } else {
@@ -74,7 +76,7 @@ function parseCommand() {
     commandCount++;
     $( '#commandCountFeed span' ).html( commandCount );
 
-}// ( parseCommand )
+};// ( parseCommand )
 
 /******************
     Commands
@@ -85,44 +87,44 @@ function parseCommand() {
 function balCMD( inputValue ) {
     var feedbackValue = balanceMSG;
     displayFeedback(inputValue, feedbackValue);
-}
+};
 
 // Help
 function helpCMD( inputValue ) {
     var feedbackValue = helpMSG;
     displayFeedback(inputValue, feedbackValue);
-}
+};
 
 // Send
 function sendCMD( inputValue ) {
     var feedbackValue = sendMSG;
     displayFeedback(inputValue, feedbackValue);
-}
+};
 
 // Transaction
 function transCMD( inputValue ) {
     var feedbackValue = transMSG;
     displayFeedback(inputValue, feedbackValue);
-}
+};
 
 // Unknown
 function unknownCMD( inputValue ) {
     var feedbackValue = unknownMSG;
     displayFeedback(inputValue, feedbackValue);
-}
+};
 
 // Welcome
 function welcomeCMD( inputValue ) {
     var feedbackValue = welcomeMSG;
     displayFeedback(inputValue, feedbackValue);
-}
+};
 
 // KOREAN
 // Korean 안녕
 function welcomeK( inputValue ) {
     var feedbackValue = kWelcomeMSG;
     displayFeedback(inputValue, feedbackValue);
-}
+};
 
 
 /**********************
