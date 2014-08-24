@@ -8,13 +8,13 @@ var bitBalance = 0; //in BITs, one-millionth of a 'bitcoin'
 /******************
     SMS responses
 ********************/
-var welcomeMSG = 'Welcome to 37coins. SMS bitcoin wallet. Send commands to this gateway number. Reply HELP for more info or www.37coins.com';
+var balanceMSG = 'balance is displayed here';
 var sendMSG = 'How much do you want to send?';
 var helpMSG = 'Help instructions here. send = this. bal = this. pin = this.';
 var koreanMSG = '안녕하십니까!';
 var unknownMSG = 'Unknown command, please try again';
-var balanceMSG = 'balance is displayed here';
-// ( SMS responses )
+var welcomeMSG = 'Welcome to 37coins. SMS bitcoin wallet. Send commands to this gateway number. Reply HELP for more info or www.37coins.com';
+
 
 /**************************
     HTML and CSS Stuff
@@ -32,7 +32,7 @@ $( 'button' ).click(function() {
 });// ( Send button )
 
 // Hit 'enter' on form
-$( '#textBox' ).keydown(function(){
+$( '#textBox' ).keydown(function() {
     if( event.which == 13 ){
       parseCommand();
     };
@@ -44,34 +44,31 @@ $( '#textBox' ).keydown(function(){
     Parsing of commands
  ************************/
 // return different command depending on input
-function parseCommand(){
+function parseCommand() {
+    var inputValue = $( 'input' ).val();
 
-var inputValue = $( 'input' ).val();
+    // if user is new
+    if ( commandCount == 0 ) {
+        var feedbackValue = welcomeMSG;
+        displayFeedback(inputValue, feedbackValue);
+        // stupid simple parsing...
+    } else if ( inputValue == 'send' ) {
+        var feedbackValue = sendMSG;
+    } else if ( inputValue == 'help' ) {
+        var feedbackValue = helpMSG;
+    } else if ( inputValue == '안녕' ) {
+        var feedbackValue = koreanMSG;
+    } else if ( inputValue == 'bal' ) {
+        var feedbackValue = balanceMSG;
+    } else {
+        var feedbackValue = unknownMSG;
+    };  // ( stupid simple parsing )
 
-// if user is new
-if ( commandCount == 0 ){
-    var feedbackValue = welcomeMSG;
-    displayFeedback(inputValue, feedbackValue);
-// stupid simple parsing...
-} else if ( inputValue == 'send' ){
-    var feedbackValue = sendMSG;
-} else if ( inputValue == 'help' ){
-    var feedbackValue = helpMSG;
-} else if ( inputValue == '안녕' ){
-    var feedbackValue = koreanMSG;
-} else if ( inputValue == 'bal' ){
-    var feedbackValue = balanceMSG;
-} else {
-    var feedbackValue = unknownMSG;
-}; // ( simple parsing )
-
-    commandCount++;
-    
     // Feedback on Variables
+    commandCount++;
     $( '#commandCountFeed span' ).html( commandCount );
 
     displayFeedback(inputValue, feedbackValue);
-
 }// ( parseCommand )
 
 /**********************
@@ -87,8 +84,6 @@ function displayFeedback(inputValue, feedbackValue) {
     $( '.recordReceived' ).text( feedbackValue );
 
 }// ( Register and display messages )
-
-
 
 
 /* EXAMPLE: Define element first
