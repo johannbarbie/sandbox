@@ -1,0 +1,564 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"text",
+				"text"
+			],
+			[
+				"bit",
+				"bitBalance"
+			],
+			[
+				"input",
+				"inputValue"
+			],
+			[
+				"display",
+				"displayFeedback"
+			],
+			[
+				"font",
+				"font-size"
+			],
+			[
+				"pantone",
+				"pantone-black-m"
+			],
+			[
+				"pan",
+				"pantone-black-m"
+			],
+			[
+				"pant",
+				"pantone-blue-300"
+			],
+			[
+				"background",
+				"background-color"
+			],
+			[
+				"stage",
+				"stage-darkgrey"
+			],
+			[
+				"backg",
+				"background-color"
+			],
+			[
+				"page",
+				"page"
+			],
+			[
+				"about",
+				"about"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "smswallet-emulator.html",
+			"settings":
+			{
+				"buffer_size": 9682,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "css/style.css",
+			"settings":
+			{
+				"buffer_size": 171461,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "css/sms-wallet.css",
+			"settings":
+			{
+				"buffer_size": 1242,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "js/sms-wallet.js",
+			"settings":
+			{
+				"buffer_size": 5038,
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"console":
+	{
+		"height": 0.0
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/Users/organized/Documents/37coins/sandbox/boostrap-WB0226558 copy/index.html",
+		"/Users/organized/Documents/37coins/sandbox/javascript-101.html",
+		"/Users/organized/Documents/37coins/sandbox/SMSemulator.html",
+		"/Users/organized/Documents/37coins/sandbox/demo.html",
+		"/Users/organized/Library/Application Support/Sublime Text 2/Packages/User/chrome.sublime-build",
+		"/Users/organized/Documents/37coins/sketch-resources/boostrap-WB0226558 copy/css/style.css",
+		"/Users/organized/Documents/37coins/sketch-resources/boostrap-WB0226558 copy/index.html",
+		"/Users/organized/Documents/37Coins/sketch-resources/boostrap-WB0226558/ui-elements.html",
+		"/Users/organized/Documents/37Coins/sketch-resources/boostrap-WB0226558/css/style.css",
+		"/Users/organized/Documents/37Coins/webui_vagrant_ansible-master 2/src/webui/app/scripts/views/exampleView.js",
+		"/Users/organized/Documents/37Coins/webui_vagrant_ansible-master 2/src/webui/app/scripts/routers/pageController.js",
+		"/Users/organized/Documents/37Coins/webui_vagrant_ansible-master 2/src/webui/app/scripts/nls/root/labels.js",
+		"/Users/organized/Documents/37Coins/webui_vagrant_ansible-master 2/src/webui/app/styles/main.scss",
+		"/Users/organized/Documents/37Coins/webui_vagrant_ansible-master 2/src/webui/app/templates/testView_tmpl.hbs",
+		"/Users/organized/Documents/37Coins/webui_vagrant_ansible-master 2/src/webui/app/templates/gatewayLayout_tmpl.hbs",
+		"/Users/organized/Google Drive/37Coins/User Interface/Web UI/5_attributions/Attribution.txt",
+		"/Users/organized/Documents/37Coins/webui_vagrant_ansible-master 2/src/webui/app/scripts/views/testView.js",
+		"/Users/organized/Documents/37Coins/webui_vagrant_ansible-master 2/src/webui/app/scripts/views/aboutView.js",
+		"/Users/organized/Documents/37Coins/webui_vagrant_ansible-master 2/src/webui/app/templates/infoBarView_tmpl.hbs",
+		"/Users/organized/Documents/37Coins/webui_vagrant_ansible-master 2/src/webui/app/templates/gatewayPreView_tmpl.hbs",
+		"/Users/organized/Documents/37Coins/webui_vagrant_ansible-master 2/src/webui/app/templates/balanceView_tmpl.hbs",
+		"/Users/organized/Documents/37Coins/webui_vagrant_ansible-master 2/src/webui/app/templates/feeView_tmpl.hbs",
+		"/Users/organized/Documents/37Coins/webui_vagrant_ansible-master 2/src/webui/app/templates/gatewayView_tmpl.hbs",
+		"/Users/organized/Documents/37Coins/webui_vagrant_ansible-master 2/src/webui/app/templates/gatewayCollectionView_tmpl.hbs",
+		"/Users/organized/Documents/37Coins/webui_vagrant_ansible-master 2/src/webui/app/templates/commandHelpLayout_tmpl.hbs",
+		"/Users/organized/Documents/37Coins/webui_vagrant_ansible-master 2/src/webui/app/templates/indexLayout_tmpl.hbs",
+		"/Users/organized/Documents/37Coins/webui_vagrant_ansible-master 2/src/webui/app/templates/commandsView_tmpl.hbs",
+		"/Users/organized/Documents/37Coins/webui_vagrant_ansible-master 2/src/webui/app/scripts/views/indexLayout.js",
+		"/Users/organized/Documents/37Coins/webui_vagrant_ansible-master 2/src/webui/app/templates/aboutView_tmpl.hbs",
+		"/Users/organized/Documents/37Coins/webui_vagrant_ansible-master 2/src/webui/app/templates/indexHeaderLayout_tmpl.hbs",
+		"/Users/organized/Documents/37Coins/webui_vagrant_ansible-master 2/src/webui/app/scripts/nls/root/webLabels.js",
+		"/Users/organized/Documents/37Coins/webui_vagrant_ansible-master 2/src/webui/app/scripts/nls/es/webLabels.js",
+		"/Users/organized/Documents/37Coins/webui_vagrant_ansible-master 2/src/webui/app/scripts/nls/ru/labels.js",
+		"/Users/organized/Documents/37Coins/webui_vagrant_ansible-master 2/src/webui/app/scripts/nls/it/labels.js",
+		"/Users/organized/Documents/37Coins/webui_vagrant_ansible-master 2/src/webui/app/scripts/nls/fr/labels.js",
+		"/Users/organized/Documents/37Coins/webui_vagrant_ansible-master 2/src/webui/app/scripts/nls/de/labels.js",
+		"/Users/organized/Documents/37Coins/webui_vagrant_ansible-master 2/src/webui/app/scripts/nls/es/labels.js",
+		"/Users/organized/Documents/37Coins/webui_vagrant_ansible-master 2/src/webui/app/scripts/views/accountLayout.js",
+		"/Users/organized/Documents/37Coins/webui_vagrant_ansible-master 2/src/webui/app/templates/accountHeaderView_tmpl.hbs",
+		"/Users/organized/Documents/37Coins/webui_vagrant_ansible-master 2/src/webui/app/templates/accountHeadlineView_tmpl.hbs",
+		"/Users/organized/Documents/37Coins/webui_vagrant_ansible-master 2/src/webui/app/templates/signupWalletLayout_tmpl.hbs",
+		"/Users/organized/Documents/37Coins/webui_vagrant_ansible-master 2/src/webui/app/templates/signinWalletLayout_tmpl.hbs",
+		"/Users/organized/Documents/37Coins/webui_vagrant_ansible-master 2/src/webui/app/templates/loginView_tmpl.hbs",
+		"/Users/organized/Documents/37Coins/webui_vagrant_ansible-master 2/src/webui/app/templates/signupView_tmpl.hbs",
+		"/Users/organized/Documents/37Coins/webui_vagrant_ansible-master 2/src/webui/app/scripts/nls/ko/labels.js",
+		"/Users/organized/Desktop/labels_Kor.js",
+		"/Users/organized/Documents/37Coins/webui_vagrant_ansible-master 2/src/webui/app/scripts/nls/it/Find Results",
+		"/Users/organized/Documents/37Coins/webui_vagrant_ansible-master 2/src/webui/app/templates/accountLayout_tmpl.hbs",
+		"/Users/organized/Documents/37Coins/webui_vagrant_ansible-master 2/src/webui/app/templates/privacyView_tmpl.hbs",
+		"/Users/organized/Documents/37Coins/webui_vagrant_ansible-master 2/src/webui/app/templates/faqView_tmpl.hbs",
+		"/Users/organized/Documents/37Coins/webui_vagrant_ansible-master 2/src/webui/app/templates/footerView_tmpl.hbs",
+		"/Users/organized/Documents/37Coins/webui_vagrant_ansible-master 2/src/webui/app/templates/navView_tmpl.hbs",
+		"/Users/organized/Documents/37Coins/webui_vagrant_ansible-master 2/src/webui/app/templates/commandHelpView_tmpl.hbs",
+		"/Users/organized/Documents/37Coins/webui_vagrant_ansible-master 2/src/webui/app/scripts/views/commandHelpView.js",
+		"/Users/organized/Documents/37Coins/webui_vagrant_ansible-master 2/src/webui/app/templates/configView_tmpl.hbs",
+		"/Users/organized/Documents/37Coins/webui_vagrant_ansible-master 2/src/webui/app/templates/BU_faqView_tmpl.hbs",
+		"/Users/organized/Documents/37Coins/webui_vagrant_ansible-master 2/src/webui/app/templates/indexView_tmpl.hbs",
+		"/Users/organized/Documents/37Coins/webui_vagrant_ansible-master 2/src/webui/app/templates/helpSMSView_tmpl.hbs",
+		"/Users/organized/Documents/37Coins/webui_vagrant_ansible-master 2/src/webui/app/templates/signinWallet_tmpl.hbs",
+		"/Users/organized/Documents/37Coins/webui_vagrant_ansible-master 2/src/webui/app/templates/indexHeaderView_tmpl.hbs",
+		"/Users/organized/Documents/37Coins/webui_vagrant_ansible-master 2/src/webui/app/templates/signupWallet_tmpl.hbs",
+		"/Users/organized/Documents/37Coins/webui_vagrant_ansible-master 2/src/webui/app/templates/resetConfErrorView_tmpl.hbs",
+		"/Users/organized/Library/Application Support/Sublime Text 2/Packages/Default/Preferences.sublime-settings",
+		"/Users/organized/Documents/37Coins/webui_vagrant_ansible-master 2/src/webui/app/index.html",
+		"/Users/organized/Documents/37Coins/webui_vagrant_ansible-master 2/src/webui/app/templates/headerSendView_tmpl.hbs",
+		"/Users/organized/Documents/37Coins/webui_vagrant_ansible-master 2/src/webui/app/templates/headerView_tmpl.hbs",
+		"/Users/organized/Desktop/bootstrap/js/index.html",
+		"/Users/organized/Library/Application Support/Sublime Text 2/Packages/User/Preferences.sublime-settings",
+		"/Users/organized/Documents/Bitcoin/Lost Password/passwordCrackingScript.rb",
+		"/Users/organized/Dropbox/한국어/한국어.mm",
+		"/Users/organized/Documents/Consulting/HBD001/wordpress001/wp-content/themes/lh_wordpress_blank_theme/about.php",
+		"/Users/organized/Documents/Consulting/HBD001/wordpress001/wp-content/themes/lh_wordpress_blank_theme/index.php",
+		"/Users/organized/Documents/Consulting/HBD001/wordpress001/wp-content/themes/lh_wordpress_blank_theme/img/style.css",
+		"/Users/organized/Documents/Consulting/HBD001/wordpress001/wp-content/themes/lh_wordpress_blank_theme/front-page.php",
+		"/Users/organized/Desktop/xyz.vbs",
+		"/Users/organized/Documents/Consulting/HBD001/wordpress001/wp-content/themes/lh_wordpress_blank_theme/style.css"
+	],
+	"find":
+	{
+		"height": 35.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+			"style.css",
+			""
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"parseCommand",
+			"h1",
+			"class=\"h1\"",
+			"h1",
+			"tooltip",
+			"table-striped",
+			"$navbar-37-toggle-hover-bg",
+			"$navbar-37-toggle-hover-bg;",
+			"accountInfoBar",
+			"gateway",
+			"sign-out",
+			"lightgray2",
+			"lightgray",
+			"word-",
+			"table",
+			"ex4",
+			"\"send.example\"",
+			"send.example",
+			"subHero",
+			".subHero",
+			"h1",
+			"20px",
+			"subhero",
+			"carousel",
+			"smswallet",
+			"90px",
+			"smsGateway",
+			"smsgateway",
+			"blue",
+			"<cantidad>",
+			"12000",
+			"Get balance",
+			"bit",
+			"donate",
+			"sign in",
+			"wallet Sign ",
+			"wallet",
+			"loginV",
+			"smswallet",
+			"account",
+			"transaction fee in ",
+			"w.gwV.title}",
+			"statusFrm",
+			"1453",
+			"clippedImg",
+			"mbtc",
+			"mili-bit",
+			"mbtc",
+			"\"VoiceCmd\" : [\"voice\"],",
+			"txns",
+			"tran",
+			"Get balance in BIT",
+			"BIT",
+			"12048",
+			"Get balance in BIT",
+			"gatewaymodel.js",
+			"bit",
+			"send;",
+			"6300",
+			"mBTC",
+			"bit",
+			"Bit",
+			"mBTC",
+			"container",
+			"white",
+			"darkgrey",
+			"stage",
+			"headerImg",
+			"#header",
+			"header",
+			"navbar37",
+			"navbar37-blue",
+			"navbar37-brown ",
+			"fus",
+			"purple",
+			"nav",
+			"navbar-header",
+			"navbar",
+			"navbar-header",
+			"\"navbar-header\"",
+			"navbar-header",
+			"div.navbar-header",
+			"row",
+			"uv-bubble",
+			"panel-body",
+			"content",
+			"list-about",
+			"icon-contact",
+			".icon-contact",
+			"body",
+			">\n",
+			"$navbar-37-link-hover-bg",
+			"428bca",
+			"#428bca",
+			"dropdown-menu",
+			"dropdown ",
+			"drop-down ",
+			"Send",
+			"country-list",
+			"navbar37-background",
+			"navbar-37",
+			"\"in\"",
+			"in",
+			"navbar-collapse",
+			"navbar-nav",
+			"hr",
+			"html",
+			"table-hover",
+			"margin-top: -",
+			"navbar-background",
+			".panel-boy",
+			"\"in\"",
+			"in",
+			"navbar-header",
+			"stage",
+			"wrap",
+			"stage-blue",
+			"stage",
+			"container",
+			"cointainer",
+			"clippedImg",
+			"h2",
+			"navbar-brand",
+			"428bca",
+			"66, 139, 202",
+			"navbar-37-link-color",
+			"dropdown-",
+			"navbar"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": true,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "smswallet-emulator.html",
+					"settings":
+					{
+						"buffer_size": 9682,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
+			]
+		},
+		{
+			"selected": 1,
+			"sheets":
+			[
+				{
+					"buffer": 1,
+					"file": "css/style.css",
+					"settings":
+					{
+						"buffer_size": 171461,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								534,
+								534
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/CSS/CSS.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "css/sms-wallet.css",
+					"settings":
+					{
+						"buffer_size": 1242,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/CSS/CSS.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
+			]
+		},
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 3,
+					"file": "js/sms-wallet.js",
+					"settings":
+					{
+						"buffer_size": 5038,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 34.0
+	},
+	"input":
+	{
+		"height": 31.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			],
+			[
+				1,
+				0,
+				2,
+				1
+			],
+			[
+				2,
+				0,
+				3,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			0.369714993804,
+			0.665493597687,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 100.0
+	},
+	"replace":
+	{
+		"height": 64.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"show_minimap": false,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": false,
+	"side_bar_width": 196.0,
+	"status_bar_visible": true
+}

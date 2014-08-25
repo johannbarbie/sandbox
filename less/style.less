@@ -1,0 +1,196 @@
+/*------------------------------------------------------------------
+Project:    Oneline
+Author:     Yevgeny S.
+URL:        https://twitter.com/YevSim
+Version:    1.0
+Created:        28/04/2014
+Last change:    22/07/2014
+-------------------------------------------------------------------*/
+
+@import "bootstrap/bootstrap.less";
+@import "elements.less";
+@import "index.less";
+@import "about-us.less";
+@import "contact-us.less";
+@import "help-center.less";
+@import "pricing-table.less";
+@import "timeline.less";
+@import "error-page.less";
+@import "portfolio.less";
+@import "blog.less";
+@import "ui-elements.less";
+
+/* ===== General ===== */
+
+html, body {
+    height: 100%;
+}
+body.alt {
+    background: @new-gray-lighter url(../img/noise.jpg) repeat;
+    padding-top: 100px;
+}
+@media (max-width: @screen-xs-max) {
+    body.alt {
+        padding-top: 150px;
+    }
+}
+/* ===== Wrapper ===== */
+
+.wrapper {
+    min-height: 100%;
+    height: auto !important; /* for older versions of IE */
+    height: 100%;
+    padding-top: 126px; /* navbar height + margin */
+    margin-bottom: -409px; /* footer height + margin */
+    padding-bottom: 409px; /* footer height + margin */
+}
+.wrapper.alt {
+    background: @new-gray-3x-lighter;
+}
+
+/* ===== Topic ===== */
+
+.topic {
+    margin-top: -40px;
+    margin-bottom: 40px;
+    border-bottom: 1px solid @new-gray-lighter;
+    background: @new-gray-lighter url(../img/noise.jpg) repeat;
+}
+.topic h3 {
+    margin: 0;
+    padding: 30px 0;
+    font-size: 16px;
+    font-weight: 600;
+    text-transform: none;
+}
+.topic .breadcrumb {
+    margin-bottom: 0;
+    padding: 29px 0;
+    background: transparent;
+}
+
+/* ===== Footer ===== */
+
+footer {
+    padding: 40px 0;
+    margin-top: 60px;
+    background: @new-gray-lighter url(../img/noise.jpg) repeat;
+    border-top: 1px solid darken(@new-gray-lighter,5%);
+    font-size: 13px;
+    .box-shadow(0 0 16px rgba(0,0,0,.175));
+}
+footer .footer-brand {
+    max-height: 25px;
+    margin-bottom: 20px;
+}
+footer a:hover,
+footer a:focus {
+    text-decoration: none;
+}
+footer p {
+    color: @new-gray-light;
+}
+footer h1 {
+    margin: 0 0 25px;
+    text-align: left;
+    font-size: 18px;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+@media (max-width: @screen-xs-max) {
+    footer h1 {
+        margin-top: 25px;
+    }
+    footer .footer-brand {
+        margin-top: 25px;
+    }
+}
+
+/*** Tweets ***/
+
+.tweet {
+    font-size: 13px;
+    margin-bottom: 20px;
+}
+.tweet.alt {
+    background-color: @new-gray-2x-lighter;
+    padding: 10px;
+}
+.tweet:last-child {
+    margin-bottom: 0;
+}
+.tweet > i {
+    float: left;
+    margin-right: 15px;
+    color: @new-blue;
+}
+.tweet > p {
+    overflow: hidden;
+    color: @new-gray-light;
+}
+.tweet > p > a {
+    display: block;
+}
+
+footer .links {
+    padding-left: 0;
+    list-style-type: none;
+}
+footer .links li a {
+    display: block;
+    padding: 10px 0;
+    border-bottom: 1px solid darken(@new-gray-lighter,7%);
+    color: @new-gray-light;
+}
+footer .links li a:hover,
+footer .links li a:focus {
+    color: @new-blue;
+}
+footer .links li:last-child a {
+    border-bottom: 0;
+}
+footer .social-links {
+    padding: 0;
+    margin-top: 20px;
+    list-style-type: 0;
+}
+footer .social-links li {
+    display: inline-block;
+}
+footer .social-links a {
+    display: block;
+    .circle(30px);
+    background-color: darken(@new-gray-lighter, 7%);
+    color: @new-gray-light;
+    margin-right: 1px;
+    .transition-new(background-color);
+}
+footer .twitter a:hover,
+footer .twitter a:focus {
+    background-color: @twitter-color;
+    color: white;
+}
+footer .facebook a:hover,
+footer .facebook a:focus {
+    background-color: @facebook-color;
+    color: white;
+}
+footer .linkedin a:hover,
+footer .linkedin a:focus {
+    background-color: @linkedin-color;
+    color: white;
+}
+
+/* ===== Back to Top link ===== */
+
+.backtotop {
+    background: @new-gray-light;
+    padding: 10px 15px;
+    font-size: 18px;
+    color: #FFF;
+    border-radius: 3px;
+    .transition-new(background);
+}
+.backtotop:hover {
+    background: @new-gray;
+}
